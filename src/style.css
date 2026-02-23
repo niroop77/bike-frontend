@@ -1,0 +1,14 @@
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #dc3545 !important;
+}
+.navbar > .container {
+   flex-wrap: wrap;
+}
+.justify-content-between{
+  justify-content: flex-start;
+  
+}
