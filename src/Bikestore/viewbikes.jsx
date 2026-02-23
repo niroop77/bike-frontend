@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Navbar from "./Navbar";
+import Navbar from "./navbar";
 import { useNavigate, useLocation } from "react-router-dom";
 
 function Viewbikes() {
@@ -74,7 +74,10 @@ function Viewbikes() {
 
                     <p><b>Type:</b> {bike.type}</p>
                     <p><b>Price:</b> ₹{bike.price}</p>
-                    <p><b>Mileage:</b> {bike.mileage}</p>
+                    <p>
+  <b>Mileage:</b> {bike.mileage}{" "}
+  {bike.type.toLowerCase() === "electric" ? "km/kWh" : "km/l"}
+</p>
                     <p><b>Mfg Year:</b> {bike.mfgYear}</p>
                     <p><b>Chasis Number:</b> {bike.chasisNumber}</p>
 
